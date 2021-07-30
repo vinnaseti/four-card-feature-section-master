@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+    margin-top: 70px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+h1,
+h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+section#about h1,
+p {
+    font-weight: 200;
+}
+
+section#about h1 {
+    font-size: x-large;
+}
+
+section#about h1 span {
+    font-weight: 600;
+}
+
+section#about {
+    margin-bottom: 50px;
+}
+
+section#card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section#card div.card {
+    width: 300px;
+    height: 225px;
+
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px rgba(128, 128, 128, 0.3);
+
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+section#card div.card hr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    height: 5px;
+    border: 0;
+}
+
+section#card div.card hr.cyan {
+    background-color: hsl(180, 62%, 55%);
+}
+
+section#card div.card hr.red {
+    background-color: hsl(0, 78%, 62%);
+}
+
+section#card div.card hr.yellow {
+    background-color: hsl(34, 97%, 64%);
+}
+
+section#card div.card hr.blue {
+    background-color: hsl(212, 86%, 64%);
+}
+
+section#card div.card h2,
+p {
+    margin-top: 0;
+    margin-bottom: .2em;
+}
+
+section#card div.card p {
+    font-size: small;
+}
+
+section#card div.card img {
+    width: 20%;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:480px) {
+    section#about {
+        width: 40%;
+    }
+
+    section#about h1 {
+        font-size: xx-large;
+    }
+
+    section#about p {
+        font-size: larger;
+    }
+
+    section#card {
+        flex-flow: row nowrap;
+    }
+
+    section#card div.card {
+        margin: 20px;
+        width: 320px;
+    }
+
+}
